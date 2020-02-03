@@ -1,0 +1,23 @@
+<div class="col-md-4 mx-auto">
+
+    <div class="card">
+        <div class="card-body">
+            <form action="/personas/edit/{{persona.id}}" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" class="form-control" placeholder="name" value="{{persona.name}}" autofocus>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" class="form-control" placeholder="email" value="{{persona.email}}">
+                </div>
+                <div class="form-group">
+                    <textarea name="phone" rows="2" class="form-control" placeholder="phone">{{persona.phone}}</textarea>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-success btn-block">
+                        Guardar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

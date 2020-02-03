@@ -1,0 +1,48 @@
+<div class="container p-4">
+<h3>Listado de Registros de personas del usuario actual</h3>
+    <div class="row">
+            <table id="example" class="display" width="100%">
+                <thead>
+                    <tr>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone</th>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Eliminar</th>
+                        <th scope="col">Editar</th>
+                    </tr>
+                </thead>
+
+                <tbody id="contenido">
+                 
+        {{#each personas}}
+           <tr>
+                        <td scope="col"><p class="m-2">{{name}}</p></td>
+                        <td scope="col"><p class="m-2">{{email}}</p></td>
+                        <td scope="col"><p class="m-2">{{description}}</p></td>
+                        <td scope="col">
+                                                <p class="text-muted">
+                        {{created_at}}
+                    </p>
+                        </td>
+                        <td scope="col">                    <a class="btn btn-danger" href="/personas/delete/{{id}}">
+                        Eliminar
+                    </a></td>
+                        <td scope="col">                    <a class="btn btn-secondary" href="/personas/edit/{{id}}">
+                        Editar
+                    </a></td>
+                    </tr>
+
+                    
+        {{else}}
+                        </tbody>
+            </table>
+        <div class="col-md-4 mx-auto">
+            <div class="card card-body text-center">
+                <p>No existen Personas.</p>
+                <a href="/personas/add">Crear</a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
