@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/c67cfc21-5c6a-4c55-94b8-fcfe0b0defcb/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/jfplaps",
+    "appService.deploySubpath": ""
+}
