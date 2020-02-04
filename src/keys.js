@@ -2,10 +2,12 @@ module.exports = {
 
     database: {
         connectionLimit: 10,
-        host: 'localhost',
-        user: 'root',
-        password: '',
-        database: 'db_personas'
+        host: 'jfplaps.mysql.database.azure.com',
+        user: 'jfplaps@jfplaps',
+        password: 'Jfpl2020.',
+        database: 'db_personas',
+        port: 3306,
+        ssl: true
     }
 
 };
